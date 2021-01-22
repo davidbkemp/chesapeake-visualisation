@@ -9,30 +9,32 @@ def trim_lines(lines):
     return [line.strip() for line in lines]
 
 
-def extract_partitions(line_num, lines):
+def extract_vertices_section(line_num, lines):
     line_num = line_num + 1
     if not lines[line_num].startswith("*vertices"):
-        raise Exception("Partition missing vertices")
+        raise Exception("Vertex section missing vertices")
     num_vertices = int(lines[line_num][len("*vertices"):])
-    partitions = [int(line) for line in lines[line_num + 1: line_num + num_vertices + 1]]
-    return line_num + num_vertices, partitions
+    partitions = lines[line_num + 1: line_num + num_vertices + 1]
+    return line_num + num_vertices + 1, partitions
+
+
+def extract_partitions(line_num, lines):
+    new_line_num, vertex_data = extract_vertices_section(line_num, lines)
+    return new_line_num, [int(vertex_item) for vertex_item in vertex_data ]
 
 
 def extract_vertex_name(vertex):
     return vertex[vertex.find('"') + 1: -1]
 
 
-def extract_vertex_names(vertices):
-    return [extract_vertex_name(vertex) for vertex in vertices]
-
-
 def extract_nodes(line_num, lines):
-    line_num = line_num + 1
-    if not lines[line_num].startswith("*vertices"):
-        raise Exception("Partition missing vertices")
-    num_vertices = int(lines[line_num][len("*vertices"):])
-    vertices = extract_vertex_names(lines[line_num + 1: line_num + num_vertices + 1])
-    return line_num + num_vertices + 1, vertices
+    new_line_num, vertex_data = extract_vertices_section(line_num, lines)
+    return new_line_num, [extract_vertex_name(vertex_item) for vertex_item in vertex_data]
+
+
+def extract_bio_masses(line_num, lines):
+    new_line_num, vertex_data = extract_vertices_section(line_num, lines)
+    return new_line_num, [float(vertex_item) for vertex_item in vertex_data ]
 
 
 def extract_arcs(line_num, lines):
@@ -52,6 +54,7 @@ def process_lines(lines):
     partitions = []
     nodes = []
     arcs = []
+    bio_masses = []
     line_num = 0
     while line_num < len(lines):
         if lines[line_num].startswith("*partition"):
@@ -60,13 +63,15 @@ def process_lines(lines):
             (line_num, nodes) = extract_nodes(line_num, lines)
         if lines[line_num].startswith("*arcs"):
             (line_num, arcs) = extract_arcs(line_num, lines)
+        if lines[line_num].startswith("*vector bio-masses"):
+            (line_num, bio_masses) = extract_bio_masses(line_num, lines)
         line_num = line_num + 1
-    return partitions, nodes, arcs
+    return partitions, nodes, arcs, bio_masses
 
 
-def generate_dotty(partitions, nodes, arcs):
+def generate_dotty(partitions, nodes, arcs, bio_masses):
     print('digraph chesapeake {')
-    print_nodes(nodes, partitions)
+    print_nodes(nodes, partitions, bio_masses)
     print_arcs(arcs)
     print('}')
 
@@ -90,10 +95,11 @@ def partition_shape(partition):
     else:
         raise Exception("unexpected partition")
 
-def print_nodes(nodes, partitions):
+
+def print_nodes(nodes, partitions, bio_masses):
     for node_num in range(len(nodes)):
         shape = partition_shape(partitions[node_num])
-        print(f'{node_num + 1} [label="{nodes[node_num]}" shape="{shape}"]')
+        print(f'{node_num + 1} [label="{nodes[node_num]}\\n({bio_masses[node_num]})" shape="{shape}"]')
 
 
 generate_dotty(*process_lines(trim_lines(ignore_comments(sys.stdin.readlines()))))
