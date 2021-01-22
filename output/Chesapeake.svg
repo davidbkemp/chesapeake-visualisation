@@ -111,8 +111,8 @@
 <g id="node34" class="node">
 <title>34</title>
 <polygon fill="#35bbad" stroke="black" points="601.37,-1464.62 407.37,-1464.62 407.37,-1426.62 601.37,-1426.62 601.37,-1464.62"/>
-<text text-anchor="middle" x="504.37" y="-1449.42" font-family="Times,serif" font-size="14.00" fill="white">dissolved organic carbon</text>
-<text text-anchor="middle" x="504.37" y="-1434.42" font-family="Times,serif" font-size="14.00" fill="white">(21857.5)</text>
+<text text-anchor="middle" x="504.37" y="-1449.42" font-family="Times,serif" font-size="14.00">dissolved organic carbon</text>
+<text text-anchor="middle" x="504.37" y="-1434.42" font-family="Times,serif" font-size="14.00">(21857.5)</text>
 </g>
 <!-- 1&#45;&gt;34 -->
 <g id="edge63" class="edge">
@@ -219,8 +219,8 @@
 <g id="node36" class="node">
 <title>36</title>
 <polygon fill="#30aa9c" stroke="black" points="1374.37,-508.96 1172.37,-508.96 1172.37,-470.96 1374.37,-470.96 1374.37,-508.96"/>
-<text text-anchor="middle" x="1273.37" y="-493.76" font-family="Times,serif" font-size="14.00" fill="white">sediment particulate orga</text>
-<text text-anchor="middle" x="1273.37" y="-478.76" font-family="Times,serif" font-size="14.00" fill="white">(305000.0)</text>
+<text text-anchor="middle" x="1273.37" y="-493.76" font-family="Times,serif" font-size="14.00">sediment particulate orga</text>
+<text text-anchor="middle" x="1273.37" y="-478.76" font-family="Times,serif" font-size="14.00">(305000.0)</text>
 </g>
 <!-- 2&#45;&gt;36 -->
 <g id="edge74" class="edge">

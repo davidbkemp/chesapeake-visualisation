@@ -104,14 +104,6 @@ def node_colour(bio_mass, max_bio_mass):
     return f'{hue}, {saturation}, {density}'
 
 
-def font_colour(bio_mass, max_bio_mass):
-    density = colour_density(bio_mass, max_bio_mass)
-    if density < 0.75:
-        return "white"
-    else:
-        return "black"
-
-
 def colour_density(bio_mass, max_bio_mass):
     return 1 - (math.log(1 + bio_mass) / (3 * math.log(1 + max_bio_mass)))
 
@@ -122,11 +114,9 @@ def print_nodes(nodes, partitions, bio_masses):
         bio_mass = bio_masses[node_num]
         shape = partition_shape(partitions[node_num])
         colour = node_colour(bio_mass, max_bio_mass)
-        text_colour = font_colour(bio_mass, max_bio_mass)
         label = f'{nodes[node_num]}\\n({bio_mass}'
         print(
-            f'{node_num + 1} [label="{label})" shape="{shape}"'
-            f' style=filled, fillcolor="{colour}" fontcolor="{text_colour}"]'
+            f'{node_num + 1} [label="{label})" shape="{shape}" style=filled, fillcolor="{colour}"]'
         )
 
 
