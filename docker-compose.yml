@@ -1,0 +1,15 @@
+version: '2.0'
+
+services:
+  genGraph:
+    image: python:3.9.1-alpine3.12
+    volumes:
+      - .:/app
+    entrypoint: python /app/src/genGraph.py
+
+  graphViz:
+    image: mygraphviz:1.0
+    build:
+      context: graphviz
+    entrypoint: /usr/bin/dot -Tsvg
+
