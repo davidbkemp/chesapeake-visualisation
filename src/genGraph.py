@@ -1,4 +1,5 @@
 import sys
+import math
 
 
 def ignore_comments(lines):
@@ -20,7 +21,7 @@ def extract_vertices_section(line_num, lines):
 
 def extract_partitions(line_num, lines):
     new_line_num, vertex_data = extract_vertices_section(line_num, lines)
-    return new_line_num, [int(vertex_item) for vertex_item in vertex_data ]
+    return new_line_num, [int(vertex_item) for vertex_item in vertex_data]
 
 
 def extract_vertex_name(vertex):
@@ -34,7 +35,7 @@ def extract_nodes(line_num, lines):
 
 def extract_bio_masses(line_num, lines):
     new_line_num, vertex_data = extract_vertices_section(line_num, lines)
-    return new_line_num, [float(vertex_item) for vertex_item in vertex_data ]
+    return new_line_num, [float(vertex_item) for vertex_item in vertex_data]
 
 
 def extract_arcs(line_num, lines):
@@ -96,10 +97,37 @@ def partition_shape(partition):
         raise Exception("unexpected partition")
 
 
+def node_colour(bio_mass, max_bio_mass):
+    hue = 0.482
+    saturation = 0.714
+    density = colour_density(bio_mass, max_bio_mass)
+    return f'{hue}, {saturation}, {density}'
+
+
+def font_colour(bio_mass, max_bio_mass):
+    density = colour_density(bio_mass, max_bio_mass)
+    if density < 0.75:
+        return "white"
+    else:
+        return "black"
+
+
+def colour_density(bio_mass, max_bio_mass):
+    return 1 - (math.log(1 + bio_mass) / (3 * math.log(1 + max_bio_mass)))
+
+
 def print_nodes(nodes, partitions, bio_masses):
+    max_bio_mass = max(bio_masses)
     for node_num in range(len(nodes)):
+        bio_mass = bio_masses[node_num]
         shape = partition_shape(partitions[node_num])
-        print(f'{node_num + 1} [label="{nodes[node_num]}\\n({bio_masses[node_num]})" shape="{shape}"]')
+        colour = node_colour(bio_mass, max_bio_mass)
+        text_colour = font_colour(bio_mass, max_bio_mass)
+        label = f'{nodes[node_num]}\\n({bio_mass}'
+        print(
+            f'{node_num + 1} [label="{label})" shape="{shape}"'
+            f' style=filled, fillcolor="{colour}" fontcolor="{text_colour}"]'
+        )
 
 
 generate_dotty(*process_lines(trim_lines(ignore_comments(sys.stdin.readlines()))))
