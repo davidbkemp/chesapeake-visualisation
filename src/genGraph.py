@@ -93,39 +93,31 @@ def partition_shape(partition):
         return 'ellipse'
     elif partition == 2:
         return 'box'
-    elif partition == 3:
-        return 'pentagon'
-    elif partition == 4:
-        return 'Mdiamond'
-    elif partition == 5:
-        return 'doubleoctagon'
+    elif partition in [3, 4, 5]:
+        return 'hexagon'
     else:
         raise Exception("unexpected partition")
-
-
-def node_colour(bio_mass, max_bio_mass, partition):
-    if partition in [3, 4, 5]:
-        return 'white'
-    else:
-        hue = 0.482
-        saturation = 0.714
-        density = colour_density(bio_mass, max_bio_mass)
-        return f'{hue}, {saturation}, {density}'
-
-
-def colour_density(bio_mass, max_bio_mass):
-    return 1 - (math.log(1 + bio_mass) / (3 * math.log(1 + max_bio_mass)))
-
-
-def node_pen_width(bio_mass, max_bio_mass):
-    return 0.5 + 10 * (math.log(1 + bio_mass) / math.log(1 + max_bio_mass))
 
 
 def node_label(name, bio_mass, partition):
     if partition in [3, 4, 5]:
         return name
     else:
-        return f'{name}\\n({bio_mass} gC.m²)'
+        return f'{name}\\n({bio_mass:.2f} gC.m²)'
+
+
+def node_font_size(bio_mass, max_bio_mass, partition):
+    if partition in [3, 4, 5]:
+        return 21
+    else:
+        return 14 * (1 + (math.log(1 + bio_mass) / math.log(1 + max_bio_mass)))
+
+
+def node_colour(partition):
+    if partition in [3, 4, 5]:
+        return "white"
+    else:
+        return "0.482, 0.714, 0.8"
 
 
 def print_nodes(nodes, partitions, bio_masses):
@@ -134,11 +126,11 @@ def print_nodes(nodes, partitions, bio_masses):
         bio_mass = bio_masses[node_num]
         partition = partitions[node_num]
         shape = partition_shape(partition)
-        colour = node_colour(bio_mass, max_bio_mass, partition)
-        pen_width = node_pen_width(bio_mass, max_bio_mass)
+        colour = node_colour(partition)
+        font_size = node_font_size(bio_mass, max_bio_mass, partition)
         label = node_label(nodes[node_num], bio_mass, partition)
         print(
-            f'{node_num + 1} [label="{label}" shape="{shape}" style=filled, fillcolor="{colour}", penwidth="{pen_width}"]'
+            f'{node_num + 1} [label="{label}" shape="{shape}" style=filled fillcolor="{colour}" fontsize={font_size}]'
         )
 
 
