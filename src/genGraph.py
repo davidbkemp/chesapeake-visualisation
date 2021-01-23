@@ -120,6 +120,20 @@ def node_colour(partition):
         return "0.482, 0.714, 0.8"
 
 
+def node_width(bio_mass, max_bio_mass, partition):
+    if partition in [3, 4, 5]:
+        return 3
+    else:
+        return 3 * (1 + (math.log(1 + bio_mass) / math.log(1 + max_bio_mass)))
+
+
+def node_height(bio_mass, max_bio_mass, partition):
+    if partition in [3, 4, 5]:
+        return 0.5
+    else:
+        return 0.6 * (1 + (math.log(1 + bio_mass) / math.log(1 + max_bio_mass)))
+
+
 def print_nodes(nodes, partitions, bio_masses):
     max_bio_mass = max(bio_masses)
     for node_num in range(len(nodes)):
@@ -128,9 +142,12 @@ def print_nodes(nodes, partitions, bio_masses):
         shape = partition_shape(partition)
         colour = node_colour(partition)
         font_size = node_font_size(bio_mass, max_bio_mass, partition)
+        width = node_width(bio_mass, max_bio_mass, partition)
+        height = node_height(bio_mass, max_bio_mass, partition)
         label = node_label(nodes[node_num], bio_mass, partition)
         print(
-            f'{node_num + 1} [label="{label}" shape="{shape}" style=filled fillcolor="{colour}" fontsize={font_size}]'
+            f'{node_num + 1} [label="{label}" shape="{shape}" style=filled fillcolor="{colour}" '
+            f'fixedsize=true height={height} width={width} fontsize={font_size}]'
         )
 
 
