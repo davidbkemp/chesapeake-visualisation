@@ -77,9 +77,15 @@ def generate_dotty(partitions, nodes, arcs, bio_masses):
     print('}')
 
 
+def arc_pen_width(weight, max_weight):
+    return 0.5 + 3 * (math.log(1 + weight) / math.log(1 + max_weight))
+
+
 def print_arcs(arcs):
+    max_weight = max([arc["weight"] for arc in arcs])
     for arc in arcs:
-        print(f'{arc["src"]} -> {arc["dest"]}')
+        pen_width = arc_pen_width(arc["weight"], max_weight)
+        print(f'{arc["src"]} -> {arc["dest"]} [penwidth={pen_width}]')
 
 
 def partition_shape(partition):
@@ -97,26 +103,42 @@ def partition_shape(partition):
         raise Exception("unexpected partition")
 
 
-def node_colour(bio_mass, max_bio_mass):
-    hue = 0.482
-    saturation = 0.714
-    density = colour_density(bio_mass, max_bio_mass)
-    return f'{hue}, {saturation}, {density}'
+def node_colour(bio_mass, max_bio_mass, partition):
+    if partition in [3, 4, 5]:
+        return 'white'
+    else:
+        hue = 0.482
+        saturation = 0.714
+        density = colour_density(bio_mass, max_bio_mass)
+        return f'{hue}, {saturation}, {density}'
 
 
 def colour_density(bio_mass, max_bio_mass):
     return 1 - (math.log(1 + bio_mass) / (3 * math.log(1 + max_bio_mass)))
 
 
+def node_pen_width(bio_mass, max_bio_mass):
+    return 0.5 + 10 * (math.log(1 + bio_mass) / math.log(1 + max_bio_mass))
+
+
+def node_label(name, bio_mass, partition):
+    if partition in [3, 4, 5]:
+        return name
+    else:
+        return f'{name}\\n({bio_mass} gC.m²)'
+
+
 def print_nodes(nodes, partitions, bio_masses):
     max_bio_mass = max(bio_masses)
     for node_num in range(len(nodes)):
         bio_mass = bio_masses[node_num]
-        shape = partition_shape(partitions[node_num])
-        colour = node_colour(bio_mass, max_bio_mass)
-        label = f'{nodes[node_num]}\\n({bio_mass}'
+        partition = partitions[node_num]
+        shape = partition_shape(partition)
+        colour = node_colour(bio_mass, max_bio_mass, partition)
+        pen_width = node_pen_width(bio_mass, max_bio_mass)
+        label = node_label(nodes[node_num], bio_mass, partition)
         print(
-            f'{node_num + 1} [label="{label})" shape="{shape}" style=filled, fillcolor="{colour}"]'
+            f'{node_num + 1} [label="{label}" shape="{shape}" style=filled, fillcolor="{colour}", penwidth="{pen_width}"]'
         )
 
 
