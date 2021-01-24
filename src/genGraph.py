@@ -121,7 +121,7 @@ def node_colour(partition):
     if is_boundary_node(partition):
         return "white"
     else:
-        return "0.482, 0.714, 0.8"
+        return "0.482, 0.3, 0.9"
 
 
 def node_width(bio_mass, max_bio_mass, partition):

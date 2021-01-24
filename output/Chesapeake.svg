@@ -12,14 +12,14 @@
 <!-- 1 -->
 <g id="node1" class="node">
 <title>1</title>
-<ellipse fill="#3accbc" stroke="black" cx="1049.28" cy="-1707.12" rx="177.5" ry="35.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1049.28" cy="-1707.12" rx="177.5" ry="35.5"/>
 <text text-anchor="middle" x="1049.28" y="-1713.69" font-family="Times,serif" font-size="23.04">phytoplankton</text>
 <text text-anchor="middle" x="1049.28" y="-1688.69" font-family="Times,serif" font-size="23.04">(3480.00 gC.m²)</text>
 </g>
 <!-- 7 -->
 <g id="node7" class="node">
 <title>7</title>
-<ellipse fill="#3accbc" stroke="black" cx="748.28" cy="-1300.62" rx="151" ry="30"/>
+<ellipse fill="#a0e5de" stroke="black" cx="748.28" cy="-1300.62" rx="151" ry="30"/>
 <text text-anchor="middle" x="748.28" y="-1306.98" font-family="Times,serif" font-size="19.55">ciliates</text>
 <text text-anchor="middle" x="748.28" y="-1284.98" font-family="Times,serif" font-size="19.55">(148.75 gC.m²)</text>
 </g>
@@ -32,7 +32,7 @@
 <!-- 8 -->
 <g id="node8" class="node">
 <title>8</title>
-<ellipse fill="#3accbc" stroke="black" cx="1800.28" cy="-1204.12" rx="153" ry="30.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1800.28" cy="-1204.12" rx="153" ry="30.5"/>
 <text text-anchor="middle" x="1800.28" y="-1210.23" font-family="Times,serif" font-size="19.87">zooplankton</text>
 <text text-anchor="middle" x="1800.28" y="-1188.23" font-family="Times,serif" font-size="19.87">(197.50 gC.m²)</text>
 </g>
@@ -45,7 +45,7 @@
 <!-- 11 -->
 <g id="node11" class="node">
 <title>11</title>
-<ellipse fill="#3accbc" stroke="black" cx="1209.28" cy="-728.12" rx="158.5" ry="31.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1209.28" cy="-728.12" rx="158.5" ry="31.5"/>
 <text text-anchor="middle" x="1209.28" y="-734.69" font-family="Times,serif" font-size="20.54">other suspension feeders</text>
 <text text-anchor="middle" x="1209.28" y="-711.69" font-family="Times,serif" font-size="20.54">(363.75 gC.m²)</text>
 </g>
@@ -58,7 +58,7 @@
 <!-- 12 -->
 <g id="node12" class="node">
 <title>12</title>
-<ellipse fill="#3accbc" stroke="black" cx="769.28" cy="-628.12" rx="148.5" ry="29.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="769.28" cy="-628.12" rx="148.5" ry="29.5"/>
 <text text-anchor="middle" x="769.28" y="-633.75" font-family="Times,serif" font-size="19.22">mya arenaria</text>
 <text text-anchor="middle" x="769.28" y="-612.75" font-family="Times,serif" font-size="19.22">(110.00 gC.m²)</text>
 </g>
@@ -71,7 +71,7 @@
 <!-- 13 -->
 <g id="node13" class="node">
 <title>13</title>
-<ellipse fill="#3accbc" stroke="black" cx="712.28" cy="-728.12" rx="168" ry="33.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="712.28" cy="-728.12" rx="168" ry="33.5"/>
 <text text-anchor="middle" x="712.28" y="-734.71" font-family="Times,serif" font-size="21.76">oysters</text>
 <text text-anchor="middle" x="712.28" y="-710.71" font-family="Times,serif" font-size="21.76">(1100.00 gC.m²)</text>
 </g>
@@ -84,7 +84,7 @@
 <!-- 22 -->
 <g id="node22" class="node">
 <title>22</title>
-<ellipse fill="#3accbc" stroke="black" cx="2400.28" cy="-728.12" rx="145" ry="29"/>
+<ellipse fill="#a0e5de" stroke="black" cx="2400.28" cy="-728.12" rx="145" ry="29"/>
 <text text-anchor="middle" x="2400.28" y="-734.11" font-family="Times,serif" font-size="18.77">bay anchovy</text>
 <text text-anchor="middle" x="2400.28" y="-713.11" font-family="Times,serif" font-size="18.77">(72.75 gC.m²)</text>
 </g>
@@ -97,7 +97,7 @@
 <!-- 23 -->
 <g id="node23" class="node">
 <title>23</title>
-<ellipse fill="#3accbc" stroke="black" cx="3397.28" cy="-628.12" rx="138" ry="27.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="3397.28" cy="-628.12" rx="138" ry="27.5"/>
 <text text-anchor="middle" x="3397.28" y="-633.83" font-family="Times,serif" font-size="17.86">menhaden</text>
 <text text-anchor="middle" x="3397.28" y="-613.83" font-family="Times,serif" font-size="17.86">(31.52 gC.m²)</text>
 </g>
@@ -110,7 +110,7 @@
 <!-- 34 -->
 <g id="node34" class="node">
 <title>34</title>
-<polygon fill="#3accbc" stroke="black" points="814.78,-1635.62 427.78,-1635.62 427.78,-1558.62 814.78,-1558.62 814.78,-1635.62"/>
+<polygon fill="#a0e5de" stroke="black" points="814.78,-1635.62 427.78,-1635.62 427.78,-1558.62 814.78,-1558.62 814.78,-1635.62"/>
 <text text-anchor="middle" x="621.28" y="-1605.06" font-family="Times,serif" font-size="25.08">dissolved organic carbon</text>
 <text text-anchor="middle" x="621.28" y="-1577.06" font-family="Times,serif" font-size="25.08">(21857.50 gC.m²)</text>
 </g>
@@ -123,7 +123,7 @@
 <!-- 35 -->
 <g id="node35" class="node">
 <title>35</title>
-<polygon fill="#3accbc" stroke="black" points="1148.78,-965.62 779.78,-965.62 779.78,-891.62 1148.78,-891.62 1148.78,-965.62"/>
+<polygon fill="#a0e5de" stroke="black" points="1148.78,-965.62 779.78,-965.62 779.78,-891.62 1148.78,-891.62 1148.78,-965.62"/>
 <text text-anchor="middle" x="964.28" y="-935.49" font-family="Times,serif" font-size="23.91">suspended particulate org</text>
 <text text-anchor="middle" x="964.28" y="-909.49" font-family="Times,serif" font-size="23.91">(7631.00 gC.m²)</text>
 </g>
@@ -148,7 +148,7 @@
 <!-- 2 -->
 <g id="node2" class="node">
 <title>2</title>
-<ellipse fill="#3accbc" stroke="black" cx="1212.28" cy="-826.62" rx="145.5" ry="29"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1212.28" cy="-826.62" rx="145.5" ry="29"/>
 <text text-anchor="middle" x="1212.28" y="-832.54" font-family="Times,serif" font-size="18.86">bacteria in suspended poc</text>
 <text text-anchor="middle" x="1212.28" y="-811.54" font-family="Times,serif" font-size="18.86">(79.00 gC.m²)</text>
 </g>
@@ -167,7 +167,7 @@
 <!-- 9 -->
 <g id="node9" class="node">
 <title>9</title>
-<ellipse fill="#3accbc" stroke="black" cx="1259.28" cy="-1111.12" rx="133.5" ry="26.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1259.28" cy="-1111.12" rx="133.5" ry="26.5"/>
 <text text-anchor="middle" x="1259.28" y="-1116.25" font-family="Times,serif" font-size="17.33">ctenophores</text>
 <text text-anchor="middle" x="1259.28" y="-1097.25" font-family="Times,serif" font-size="17.33">(19.25 gC.m²)</text>
 </g>
@@ -216,7 +216,7 @@
 <!-- 36 -->
 <g id="node36" class="node">
 <title>36</title>
-<polygon fill="#3accbc" stroke="black" points="2011.28,-561.62 1579.28,-561.62 1579.28,-475.62 2011.28,-475.62 2011.28,-561.62"/>
+<polygon fill="#a0e5de" stroke="black" points="2011.28,-561.62 1579.28,-561.62 1579.28,-475.62 2011.28,-475.62 2011.28,-561.62"/>
 <text text-anchor="middle" x="1795.28" y="-527.22" font-family="Times,serif" font-size="28.00">sediment particulate orga</text>
 <text text-anchor="middle" x="1795.28" y="-496.22" font-family="Times,serif" font-size="28.00">(305000.00 gC.m²)</text>
 </g>
@@ -235,14 +235,14 @@
 <!-- 3 -->
 <g id="node3" class="node">
 <title>3</title>
-<ellipse fill="#3accbc" stroke="black" cx="1498.28" cy="-407.12" rx="162.5" ry="32.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1498.28" cy="-407.12" rx="162.5" ry="32.5"/>
 <text text-anchor="middle" x="1498.28" y="-413.25" font-family="Times,serif" font-size="21.09">bacteria in sediment poc</text>
 <text text-anchor="middle" x="1498.28" y="-390.25" font-family="Times,serif" font-size="21.09">(600.00 gC.m²)</text>
 </g>
 <!-- 14 -->
 <g id="node14" class="node">
 <title>14</title>
-<ellipse fill="#3accbc" stroke="black" cx="1139.28" cy="-304.12" rx="168.5" ry="33.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1139.28" cy="-304.12" rx="168.5" ry="33.5"/>
 <text text-anchor="middle" x="1139.28" y="-310.64" font-family="Times,serif" font-size="21.85">other polychaetes</text>
 <text text-anchor="middle" x="1139.28" y="-286.64" font-family="Times,serif" font-size="21.85">(1186.50 gC.m²)</text>
 </g>
@@ -255,7 +255,7 @@
 <!-- 15 -->
 <g id="node15" class="node">
 <title>15</title>
-<ellipse fill="#3accbc" stroke="black" cx="1474.28" cy="-304.12" rx="148.5" ry="29.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1474.28" cy="-304.12" rx="148.5" ry="29.5"/>
 <text text-anchor="middle" x="1474.28" y="-309.72" font-family="Times,serif" font-size="19.25">nereis</text>
 <text text-anchor="middle" x="1474.28" y="-288.72" font-family="Times,serif" font-size="19.25">(113.25 gC.m²)</text>
 </g>
@@ -268,7 +268,7 @@
 <!-- 16 -->
 <g id="node16" class="node">
 <title>16</title>
-<ellipse fill="#3accbc" stroke="black" cx="2253.28" cy="-304.12" rx="172.5" ry="34.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="2253.28" cy="-304.12" rx="172.5" ry="34.5"/>
 <text text-anchor="middle" x="2253.28" y="-311.23" font-family="Times,serif" font-size="22.36">macoma spp.</text>
 <text text-anchor="middle" x="2253.28" y="-286.23" font-family="Times,serif" font-size="22.36">(1890.25 gC.m²)</text>
 </g>
@@ -281,7 +281,7 @@
 <!-- 17 -->
 <g id="node17" class="node">
 <title>17</title>
-<ellipse fill="#3accbc" stroke="black" cx="642.28" cy="-304.12" rx="158" ry="31.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="642.28" cy="-304.12" rx="158" ry="31.5"/>
 <text text-anchor="middle" x="642.28" y="-310.76" font-family="Times,serif" font-size="20.46">meiofauna</text>
 <text text-anchor="middle" x="642.28" y="-287.76" font-family="Times,serif" font-size="20.46">(337.50 gC.m²)</text>
 </g>
@@ -294,7 +294,7 @@
 <!-- 18 -->
 <g id="node18" class="node">
 <title>18</title>
-<ellipse fill="#3accbc" stroke="black" cx="1795.28" cy="-304.12" rx="154.5" ry="31"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1795.28" cy="-304.12" rx="154.5" ry="31"/>
 <text text-anchor="middle" x="1795.28" y="-310.1" font-family="Times,serif" font-size="20.02">crustacean deposit feeder</text>
 <text text-anchor="middle" x="1795.28" y="-288.1" font-family="Times,serif" font-size="20.02">(228.00 gC.m²)</text>
 </g>
@@ -319,7 +319,7 @@
 <!-- 4 -->
 <g id="node4" class="node">
 <title>4</title>
-<ellipse fill="#3accbc" stroke="black" cx="448.28" cy="-628.12" rx="152.5" ry="30.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="448.28" cy="-628.12" rx="152.5" ry="30.5"/>
 <text text-anchor="middle" x="448.28" y="-634.33" font-family="Times,serif" font-size="19.75">benthic diatoms</text>
 <text text-anchor="middle" x="448.28" y="-612.33" font-family="Times,serif" font-size="19.75">(177.25 gC.m²)</text>
 </g>
@@ -344,14 +344,14 @@
 <!-- 5 -->
 <g id="node5" class="node">
 <title>5</title>
-<ellipse fill="#3accbc" stroke="black" cx="599.28" cy="-1490.62" rx="159" ry="32"/>
+<ellipse fill="#a0e5de" stroke="black" cx="599.28" cy="-1490.62" rx="159" ry="32"/>
 <text text-anchor="middle" x="599.28" y="-1497.13" font-family="Times,serif" font-size="20.62">free bacteria</text>
 <text text-anchor="middle" x="599.28" y="-1474.13" font-family="Times,serif" font-size="20.62">(390.50 gC.m²)</text>
 </g>
 <!-- 6 -->
 <g id="node6" class="node">
 <title>6</title>
-<ellipse fill="#3accbc" stroke="black" cx="584.28" cy="-1394.62" rx="139.5" ry="28"/>
+<ellipse fill="#a0e5de" stroke="black" cx="584.28" cy="-1394.62" rx="139.5" ry="28"/>
 <text text-anchor="middle" x="584.28" y="-1400.15" font-family="Times,serif" font-size="18.09">heterotrophic microflagel</text>
 <text text-anchor="middle" x="584.28" y="-1380.15" font-family="Times,serif" font-size="18.09">(39.00 gC.m²)</text>
 </g>
@@ -442,7 +442,7 @@
 <!-- 10 -->
 <g id="node10" class="node">
 <title>10</title>
-<ellipse fill="#3accbc" stroke="black" cx="1360.28" cy="-1025.12" rx="116.5" ry="23.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1360.28" cy="-1025.12" rx="116.5" ry="23.5"/>
 <text text-anchor="middle" x="1360.28" y="-1030.03" font-family="Times,serif" font-size="15.12">sea nettle</text>
 <text text-anchor="middle" x="1360.28" y="-1013.03" font-family="Times,serif" font-size="15.12">(1.75 gC.m²)</text>
 </g>
@@ -455,7 +455,7 @@
 <!-- 20 -->
 <g id="node20" class="node">
 <title>20</title>
-<ellipse fill="#3accbc" stroke="black" cx="1797.28" cy="-628.12" rx="109" ry="22"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1797.28" cy="-628.12" rx="109" ry="22"/>
 <text text-anchor="middle" x="1797.28" y="-632.84" font-family="Times,serif" font-size="14.11">fish larvae</text>
 <text text-anchor="middle" x="1797.28" y="-616.84" font-family="Times,serif" font-size="14.11">(0.10 gC.m²)</text>
 </g>
@@ -468,7 +468,7 @@
 <!-- 21 -->
 <g id="node21" class="node">
 <title>21</title>
-<ellipse fill="#3accbc" stroke="black" cx="3050.28" cy="-628.12" rx="114.5" ry="23"/>
+<ellipse fill="#a0e5de" stroke="black" cx="3050.28" cy="-628.12" rx="114.5" ry="23"/>
 <text text-anchor="middle" x="3050.28" y="-632.24" font-family="Times,serif" font-size="14.85">alewife &amp; blue herring</text>
 <text text-anchor="middle" x="3050.28" y="-616.24" font-family="Times,serif" font-size="14.85">(1.15 gC.m²)</text>
 </g>
@@ -493,7 +493,7 @@
 <!-- 24 -->
 <g id="node24" class="node">
 <title>24</title>
-<ellipse fill="#3accbc" stroke="black" cx="2768.28" cy="-628.12" rx="111" ry="22"/>
+<ellipse fill="#a0e5de" stroke="black" cx="2768.28" cy="-628.12" rx="111" ry="22"/>
 <text text-anchor="middle" x="2768.28" y="-632.59" font-family="Times,serif" font-size="14.41">shad</text>
 <text text-anchor="middle" x="2768.28" y="-616.59" font-family="Times,serif" font-size="14.41">(0.45 gC.m²)</text>
 </g>
@@ -572,7 +572,7 @@
 <!-- 19 -->
 <g id="node19" class="node">
 <title>19</title>
-<ellipse fill="#3accbc" stroke="black" cx="2385.28" cy="-202.62" rx="156" ry="31"/>
+<ellipse fill="#a0e5de" stroke="black" cx="2385.28" cy="-202.62" rx="156" ry="31"/>
 <text text-anchor="middle" x="2385.28" y="-208.44" font-family="Times,serif" font-size="20.23">blue crab</text>
 <text text-anchor="middle" x="2385.28" y="-186.44" font-family="Times,serif" font-size="20.23">(275.00 gC.m²)</text>
 </g>
@@ -603,7 +603,7 @@
 <!-- 26 -->
 <g id="node26" class="node">
 <title>26</title>
-<ellipse fill="#3accbc" stroke="black" cx="849.28" cy="-202.62" rx="127.5" ry="25.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="849.28" cy="-202.62" rx="127.5" ry="25.5"/>
 <text text-anchor="middle" x="849.28" y="-207.38" font-family="Times,serif" font-size="16.55">hogchoker</text>
 <text text-anchor="middle" x="849.28" y="-189.38" font-family="Times,serif" font-size="16.55">(9.00 gC.m²)</text>
 </g>
@@ -652,7 +652,7 @@
 <!-- 25 -->
 <g id="node25" class="node">
 <title>25</title>
-<ellipse fill="#3accbc" stroke="black" cx="1473.28" cy="-202.62" rx="113.5" ry="22.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1473.28" cy="-202.62" rx="113.5" ry="22.5"/>
 <text text-anchor="middle" x="1473.28" y="-206.83" font-family="Times,serif" font-size="14.74">croaker</text>
 <text text-anchor="middle" x="1473.28" y="-190.83" font-family="Times,serif" font-size="14.74">(0.95 gC.m²)</text>
 </g>
@@ -671,7 +671,7 @@
 <!-- 27 -->
 <g id="node27" class="node">
 <title>27</title>
-<ellipse fill="#3accbc" stroke="black" cx="2072.28" cy="-202.62" rx="138.5" ry="27.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="2072.28" cy="-202.62" rx="138.5" ry="27.5"/>
 <text text-anchor="middle" x="2072.28" y="-208.24" font-family="Times,serif" font-size="17.97">spot</text>
 <text text-anchor="middle" x="2072.28" y="-188.24" font-family="Times,serif" font-size="17.97">(35.00 gC.m²)</text>
 </g>
@@ -684,7 +684,7 @@
 <!-- 28 -->
 <g id="node28" class="node">
 <title>28</title>
-<ellipse fill="#3accbc" stroke="black" cx="1741.28" cy="-202.62" rx="136" ry="27"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1741.28" cy="-202.62" rx="136" ry="27"/>
 <text text-anchor="middle" x="1741.28" y="-207.52" font-family="Times,serif" font-size="17.63">white perch</text>
 <text text-anchor="middle" x="1741.28" y="-188.52" font-family="Times,serif" font-size="17.63">(25.48 gC.m²)</text>
 </g>
@@ -697,7 +697,7 @@
 <!-- 29 -->
 <g id="node29" class="node">
 <title>29</title>
-<ellipse fill="#3accbc" stroke="black" cx="1130.28" cy="-202.62" rx="135" ry="27"/>
+<ellipse fill="#a0e5de" stroke="black" cx="1130.28" cy="-202.62" rx="135" ry="27"/>
 <text text-anchor="middle" x="1130.28" y="-207.63" font-family="Times,serif" font-size="17.49">catfish</text>
 <text text-anchor="middle" x="1130.28" y="-188.63" font-family="Times,serif" font-size="17.49">(22.38 gC.m²)</text>
 </g>
@@ -836,7 +836,7 @@
 <!-- 32 -->
 <g id="node32" class="node">
 <title>32</title>
-<ellipse fill="#3accbc" stroke="black" cx="2776.28" cy="-202.62" rx="122.5" ry="24.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="2776.28" cy="-202.62" rx="122.5" ry="24.5"/>
 <text text-anchor="middle" x="2776.28" y="-206.92" font-family="Times,serif" font-size="15.87">summer flounder</text>
 <text text-anchor="middle" x="2776.28" y="-189.92" font-family="Times,serif" font-size="15.87">(4.43 gC.m²)</text>
 </g>
@@ -867,7 +867,7 @@
 <!-- 33 -->
 <g id="node33" class="node">
 <title>33</title>
-<ellipse fill="#3accbc" stroke="black" cx="2966.28" cy="-111.12" rx="122.5" ry="24.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="2966.28" cy="-111.12" rx="122.5" ry="24.5"/>
 <text text-anchor="middle" x="2966.28" y="-115.43" font-family="Times,serif" font-size="15.87">striped bass</text>
 <text text-anchor="middle" x="2966.28" y="-98.43" font-family="Times,serif" font-size="15.87">(4.40 gC.m²)</text>
 </g>
@@ -952,7 +952,7 @@
 <!-- 30 -->
 <g id="node30" class="node">
 <title>30</title>
-<ellipse fill="#3accbc" stroke="black" cx="2631.28" cy="-111.12" rx="118" ry="23.5"/>
+<ellipse fill="#a0e5de" stroke="black" cx="2631.28" cy="-111.12" rx="118" ry="23.5"/>
 <text text-anchor="middle" x="2631.28" y="-115.88" font-family="Times,serif" font-size="15.31">bluefish</text>
 <text text-anchor="middle" x="2631.28" y="-98.88" font-family="Times,serif" font-size="15.31">(2.25 gC.m²)</text>
 </g>
@@ -965,7 +965,7 @@
 <!-- 31 -->
 <g id="node31" class="node">
 <title>31</title>
-<ellipse fill="#3accbc" stroke="black" cx="2400.28" cy="-628.12" rx="125" ry="25"/>
+<ellipse fill="#a0e5de" stroke="black" cx="2400.28" cy="-628.12" rx="125" ry="25"/>
 <text text-anchor="middle" x="2400.28" y="-633.16" font-family="Times,serif" font-size="16.20">weakfish</text>
 <text text-anchor="middle" x="2400.28" y="-615.16" font-family="Times,serif" font-size="16.20">(6.30 gC.m²)</text>
 </g>
