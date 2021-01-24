@@ -88,47 +88,51 @@ def print_arcs(arcs):
         print(f'{arc["src"]} -> {arc["dest"]} [penwidth={pen_width}]')
 
 
+def is_boundary_node(partition):
+    return partition in [3, 4, 5]
+
+
 def partition_shape(partition):
     if partition == 1:
         return 'ellipse'
     elif partition == 2:
         return 'box'
-    elif partition in [3, 4, 5]:
+    elif is_boundary_node(partition):
         return 'hexagon'
     else:
         raise Exception("unexpected partition")
 
 
 def node_label(name, bio_mass, partition):
-    if partition in [3, 4, 5]:
+    if is_boundary_node(partition):
         return name
     else:
         return f'{name}\\n({bio_mass:.2f} gC.m²)'
 
 
 def node_font_size(bio_mass, max_bio_mass, partition):
-    if partition in [3, 4, 5]:
+    if is_boundary_node(partition):
         return 21
     else:
         return 14 * (1 + (math.log(1 + bio_mass) / math.log(1 + max_bio_mass)))
 
 
 def node_colour(partition):
-    if partition in [3, 4, 5]:
+    if is_boundary_node(partition):
         return "white"
     else:
         return "0.482, 0.714, 0.8"
 
 
 def node_width(bio_mass, max_bio_mass, partition):
-    if partition in [3, 4, 5]:
+    if is_boundary_node(partition):
         return 3
     else:
         return 3 * (1 + (math.log(1 + bio_mass) / math.log(1 + max_bio_mass)))
 
 
 def node_height(bio_mass, max_bio_mass, partition):
-    if partition in [3, 4, 5]:
+    if is_boundary_node(partition):
         return 0.5
     else:
         return 0.6 * (1 + (math.log(1 + bio_mass) / math.log(1 + max_bio_mass)))
@@ -145,10 +149,15 @@ def print_nodes(nodes, partitions, bio_masses):
         width = node_width(bio_mass, max_bio_mass, partition)
         height = node_height(bio_mass, max_bio_mass, partition)
         label = node_label(nodes[node_num], bio_mass, partition)
-        print(
-            f'{node_num + 1} [label="{label}" shape="{shape}" style=filled fillcolor="{colour}" '
-            f'fixedsize=true height={height} width={width} fontsize={font_size}]'
-        )
+        if is_boundary_node(partition):
+            print(
+                f'{node_num + 1} [label="{label}" shape="{shape}" style=filled fillcolor="{colour}" fontsize={font_size} ]'
+            )
+        else:
+            print(
+                f'{node_num + 1} [label="{label}" shape="{shape}" style=filled fillcolor="{colour}" fontsize={font_size} '
+                f'fixedsize=true height={height} width={width}]'
+            )
 
 
 generate_dotty(*process_lines(trim_lines(ignore_comments(sys.stdin.readlines()))))
